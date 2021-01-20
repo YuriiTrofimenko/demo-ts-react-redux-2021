@@ -3,11 +3,13 @@ import Todo from "../../models/TodoModel";
 
 const initialState: Todo[] = []
 
-export default (state = initialState, action: { type: any; payload: any; }) => {
-    switch (action.type) {
-        case FETCH_TODOS:
-            return action.payload;
-        default:
-            return state
-    }
+const todosReducer = (state = initialState, action: { type: any; payload: any; }) => {
+  switch (action.type) {
+      case FETCH_TODOS:
+          return action.payload;
+      default:
+          return state
+  }
 }
+
+export default todosReducer

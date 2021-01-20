@@ -43,9 +43,9 @@ const styles = () => ({
 })
 
 class Navbar extends React.Component<IProps, IState> {
-    constructor(props: IProps | Readonly<IProps>) {
+    /* constructor(props: IProps | Readonly<IProps>) {
         super(props)
-    }
+    } */
   render() {
       const routes = this.props.routes
       // получение свойства, содержащего словарь стилей,
